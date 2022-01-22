@@ -381,3 +381,71 @@ a {
 .image:hover .hoved--img {
   opacity: 1;
 }
+
+/*==========sections 3 blue==========*/
+.section--blue {
+  background-color: #95e1d3;
+  color: #fff;
+}
+
+.section--blue--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section--blue--box {
+  flex: 1;
+  padding: 5rem 0;
+  border-left: 1px solid #fff;
+  text-align: center;
+}
+
+.section--blue--box:last-child {
+  border-right: 1px solid #fff;
+}
+
+.section--blue--num {
+  font-family: "Raleway-700", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.15;
+  padding-bottom: 1rem;
+}
+
+.section--blue--text {
+  font-family: "Raleway-700", serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+
+/*==========sections 4==========*/
+.service--box--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service--box {
+  margin: 3rem auto;
+  flex-basis: 30%;
+  display: flex;
+}
+
+.box--heading {
+  padding: 0 0 20px 30px;
+  font-family: "Raleway-700", serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-align-last: left;
+}
+
+.box--text {
+  padding: 10px 0 20px 30px;
+  font-family: "Raleway-400", serif;
+  font-size: 1.125rem;
+  line-height: 1.15;
+  text-align: left;
+}

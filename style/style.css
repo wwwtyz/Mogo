@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "KaushanScript-400";
+  src: url("../fonts/KaushanScript-Regular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-700";
+  src: url("../fonts/Montserrat-Bold.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-900";
+  src: url("../fonts/Raleway-Black-900.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../fonts/Raleway-Bold-700.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../fonts/Raleway-SemiBold-600.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-500";
+  src: url("../fonts/Raleway-MediumItalic-500.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../fonts/Raleway-Regular-400.woff2");
+  font-display: swap;
+}

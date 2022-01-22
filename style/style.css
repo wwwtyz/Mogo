@@ -266,7 +266,7 @@ a {
 }
 
 .slider--text {
-  padding: 15px auto;
+  padding: 15px 0;
   font-family: "Raleway-500", serif;
   font-size: 1.125rem;
 }
@@ -284,7 +284,8 @@ a {
 /*==========all sections==========*/
 
 .section--content {
-  margin: 3rem auto 5rem;
+  margin: 1rem auto 5rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,7 +338,7 @@ a {
   text-align: center;
 }
 
-/*==========sections 2==========*/
+/*==========section 2==========*/
 .images--wrap {
   display: flex;
   justify-content: space-between;
@@ -382,7 +383,7 @@ a {
   opacity: 1;
 }
 
-/*==========sections 3 blue==========*/
+/*==========section 3 blue==========*/
 .section--blue {
   background-color: #95e1d3;
   color: #fff;
@@ -419,7 +420,7 @@ a {
   line-height: 1.15;
 }
 
-/*==========sections 4==========*/
+/*==========section 4==========*/
 .service--box--wrap {
   display: flex;
   flex-wrap: wrap;
@@ -448,4 +449,35 @@ a {
   font-size: 1.125rem;
   line-height: 1.15;
   text-align: left;
+}
+
+/*==========section 5==========*/
+.design {
+  background-image: linear-gradient(#ffffffcc, #ffffffcc),
+    url(../img/png/design-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+.design--devises {
+  position: relative;
+}
+
+.design--phone {
+  position: absolute;
+  bottom: -10rem;
+  right: 12rem;
+  background-image: url(../img/png/phone-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.design--tablet {
+  background-image: url(../img/png/tablet-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
 }

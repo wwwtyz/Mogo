@@ -162,7 +162,7 @@ a {
 }
 
 .mogo--suptitle {
-  padding-top: 150px;
+  padding-top: 9rem;
   text-align: center;
   text-transform: capitalize;
   font-family: "KaushanScript-400", serif;
@@ -172,7 +172,7 @@ a {
 }
 
 .mogo--title {
-  padding: 0 150px;
+  padding: 0 10rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat-700", serif;
@@ -244,9 +244,9 @@ a {
   margin-right: 2rem;
 }
 
-.slider--box:hover: {
+.slider--box:hover,
+.slider--box:active {
   color: #fff;
-  background-color: #f38281;
   transition: all 0.3s ease;
 }
 
@@ -279,4 +279,105 @@ a {
 .slider--text:hover,
 .slider--num:hover {
   color: #fff;
+}
+
+/*==========all sections==========*/
+
+.section--content {
+  margin: 3rem auto 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section--heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #2d3033;
+}
+
+.section--suptitle {
+  flex: 1;
+  padding: 1rem 0;
+  text-align: center;
+  text-align: center;
+  font-family: "KaushanScript-400", cursive;
+  font-size: 1.875rem;
+  line-height: 1.45;
+}
+
+.section--suptitle::first-letter {
+  text-transform: uppercase;
+}
+
+.section--title {
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleway-900", serif;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.section--title:after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #f38181;
+}
+
+.section--paragraph {
+  padding: 1rem 0 2rem;
+  font-family: "Raleway-400", serif;
+  font-size: 1.125rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/*==========sections 2==========*/
+.images--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  margin: 0 1rem;
+}
+
+.hoved--img {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #edd789e6 0%, #e98283e6 90%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hoved--img > p {
+  font-family: "Raleway-500", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hoved--img > img {
+  max-width: 45px;
+  padding-bottom: 1rem;
+}
+
+.image:hover .hoved--img {
+  opacity: 1;
 }

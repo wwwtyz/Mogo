@@ -80,6 +80,8 @@ a {
 
 .header--content {
   display: flex;
+  padding: 1rem;
+  
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -89,19 +91,29 @@ a {
   width: 100%;
 }
 
-.header--logo {
+.header--logo img {
   max-width: 100px;
+  width: 6rem;
+  height: auto;
+  
 }
 
 .header--menu {
+  
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 /*==========nav==========*/
+
+.nav ul {
+  flex: 1;
+}
+
 .nav--link {
+  
   cursor: pointer;
-  padding: 2rem 1rem;
+  padding: 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -110,7 +122,7 @@ a {
 }
 
 .nav--link:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .nav--link:hover {
@@ -156,6 +168,8 @@ a {
 }
 
 .mogo--text {
+  max-width: 50rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,8 +185,7 @@ a {
   color: #fff;
 }
 
-.mogo--title {
-  padding: 0 10rem;
+.mogo--title {  
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat-700", serif;
@@ -196,9 +209,8 @@ a {
   display: inline-block;
   vertical-align: top;
   padding: 20px 100px;
-
   border: 3px solid #fff;
-
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -206,7 +218,6 @@ a {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-
   transition: 0.1s linear, color 0.1s linear;
 }
 
@@ -341,15 +352,17 @@ a {
 /*==========section 2==========*/
 .images--wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 1rem auto;
 }
 
 .image {
+  flex-basis: 20rem;
   position: relative;
   display: flex;
-  margin: 0 1rem;
+  margin: 0 0.3rem;
 }
 
 .hoved--img {
@@ -397,7 +410,7 @@ a {
 
 .section--blue--box {
   flex: 1;
-  padding: 5rem 0;
+  padding: 7% 0;
   border-left: 1px solid #fff;
   text-align: center;
 }
@@ -428,14 +441,19 @@ a {
   align-items: center;
 }
 
+
 .service--box {
+  flex: 1;
   margin: 3rem auto;
   flex-basis: 30%;
   display: flex;
 }
+.box--img img {
+  min-width: 4rem;  
+}
 
 .box--heading {
-  padding: 0 0 20px 30px;
+  padding: 0 0 1rem 1rem;
   font-family: "Raleway-700", serif;
   font-size: 1.5rem;
   line-height: 1.15;
@@ -444,7 +462,7 @@ a {
 }
 
 .box--text {
-  padding: 10px 0 20px 30px;
+  padding: 10px 0 1rem 1rem;
   font-family: "Raleway-400", serif;
   font-size: 1.125rem;
   line-height: 1.15;
@@ -462,10 +480,22 @@ a {
 }
 
 .design--devises {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.design--phone {
+.design--devise {  
+  position: relative;
+  background-image: url(../img/png/tablet-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% ;
+}
+
+.design--tablet{  
+  flex: 1;
+}
+.design--phone {    
   position: absolute;
   bottom: -10rem;
   right: 12rem;
@@ -475,9 +505,4 @@ a {
   background-size: initial;
 }
 
-.design--tablet {
-  background-image: url(../img/png/tablet-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: initial;
-}
+

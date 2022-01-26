@@ -125,7 +125,7 @@ a {
 }
 
 .nav__link:hover,
-.nav__link__active {
+.nav__link--active {
   color: #e4be8d;  
 }
 
@@ -144,7 +144,7 @@ a {
 }
 
 .nav__link:hover::after,
-.nav__link__active::after {
+.nav__link--active::after {
   opacity: 1;
 }
 
@@ -155,8 +155,8 @@ a {
 }
 
 .menu__icon__img {
-  max-width: 24px;
-  
+  width: 24px;
+  height: auto;  
 }
 
 .menu__icon__img:hover {
@@ -173,7 +173,7 @@ a {
 /*==========section1==========*/
 .mogo {
   background: linear-gradient(to top, #edd789e6, #e98283e6),
-    url("../img/png/banner-bg.png") center no-repeat;
+    url("../img/jpg/mogo/banner-bg.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -402,34 +402,35 @@ a {
   padding-bottom: 1rem;
 }
 
-.image:hover .hoved__img {
+.image:hover .hoved__img,
+.image--active .hoved__img{
   opacity: 1;
 }
 
-/*==========section 3 blue==========*/
-.section__blue {
+/*==========section 3 futures==========*/
+.section__futures {
   background-color: #95e1d3;
   color: #fff;
 }
 
-.section__blue__content {
+.futures__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section__blue__box {
+.futures__box {
   flex: 1;
   padding: 7% 0;
   border-left: 1px solid #fff;
   text-align: center;
 }
 
-.section__blue__box:last-child {
+.futures__box:last-child {
   border-right: 1px solid #fff;
 }
 
-.section__blue__num {
+.futures__num {
   font-family: "Raleway-700", serif;
   font-size: 4rem;
   font-weight: bold;
@@ -437,7 +438,7 @@ a {
   padding-bottom: 1rem;
 }
 
-.section__blue__text {
+.futures__text {
   font-family: "Raleway-700", serif;
   font-size: 1.5rem;
   line-height: 1.15;
@@ -479,10 +480,10 @@ a {
   text-align: left;
 }
 
-/*==========section 5==========*/
+/*==========section 5 design==========*/
 .design {
   background-image: linear-gradient(#ffffffcc, #ffffffcc),
-    url(../img/png/design-bg.png);
+    url(../img/jpg/devices/devices-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,7 +497,7 @@ a {
 
 .design__devise {  
   position: relative;
-  background-image: url(../img/png/tablet-bg.png);
+  background-image: url(../img/jpg/devices/tablet-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 55% ;
@@ -509,10 +510,6 @@ a {
   position: absolute;
   bottom: -10rem;
   right: 12rem;
-  background-image: url(../img/png/phone-bg.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: initial;
 }
 
 /*==========section 7 review==========*/
@@ -629,9 +626,10 @@ align-items: center;
   box-sizing: content-box;
   max-width: 42px;
   max-height: 42px;
-  padding: 5px 10px;
+  padding: 6px 8px;
 }
 .social__box img {
+  max-height: 2rem;
   object-fit: cover;
   filter: invert(54%) 
   sepia(4%) 

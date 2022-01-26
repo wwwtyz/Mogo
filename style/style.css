@@ -362,7 +362,7 @@ a {
 .images__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 1rem auto;
 }
@@ -411,6 +411,9 @@ a {
 .section__futures {
   background-color: #95e1d3;
   color: #fff;
+}
+.hidden-heading {
+  font-size: 0;
 }
 
 .futures__content {
@@ -526,7 +529,13 @@ a {
 }
 
 .review__img {
-  min-width: 10rem;
+  flex: 1;
+  min-width: 3rem;
+  max-width: 10rem;
+}
+
+.review__img img {
+  width: 100%;
 }
 
 .review__content::before {
@@ -542,6 +551,7 @@ a {
 }
 
 .review__text {
+  max-width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -655,10 +665,87 @@ align-items: center;
 }
 
 .partners__logo {
-  flex-basis: 15%;  
+  flex-basis: 15%; 
 }
 
 /*==========section 11==========*/
 .circle__img {
   border-radius: 50%;
+}
+
+/*==========section 12==========*/
+.clients {
+  background-image: linear-gradient(#ffffffcc, #ffffffcc),
+  url(../img/jpg/clients/clients-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clients__wrap {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client__box {
+  margin: 3rem auto;
+  flex-basis: 40%;
+  display: flex;
+  align-content: space-between;
+}
+
+.client__box :nth-child(odd){ 
+  margin-right: 2rem;
+}
+
+
+
+.clients__heading {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  color: #2D3033;
+}
+
+.clients__name { 
+  
+  font-family: "Raleway-700";  
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.15;   
+  text-transform: uppercase;
+  
+}
+
+.clients__position { 
+  margin-top: 1rem;
+  margin-bottom: 4rem; 
+  position: relative; 
+  font-family: "Raleway-400";   
+  font-size: 1.125rem;
+  line-height: 1.15;   
+  text-transform: uppercase;
+}
+
+.clients__position::after { 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15%;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #f38181;
+}
+
+.clients__text {
+  margin-top: auto; 
+  position: relative; 
+  font-family: "Raleway-400";   
+  font-size: 1.125rem;
+  line-height: 1.15;
+  color: #2D3033;
 }

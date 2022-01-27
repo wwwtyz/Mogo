@@ -531,12 +531,13 @@ a {
 
 .accord__img {
   flex: 1;
+  object-fit: cover;
 }
 
 .accord__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -547,11 +548,11 @@ a {
 }
 
 .accord__text__box:not(:first-child){
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .text__box__heading {
-  max-height: 5rem;
+  max-height: 6rem;
   padding: 2rem 0;
   display: flex;
   align-items: center;
@@ -560,7 +561,7 @@ a {
   cursor: pointer;  
 }
 
-.text__box__heading img { 
+.text__box__heading img {
   padding: 1rem;
 }
 
@@ -626,6 +627,8 @@ a {
 
 .review__btn{
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .review__btn:hover{

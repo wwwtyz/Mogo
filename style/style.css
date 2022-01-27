@@ -259,6 +259,7 @@ a {
 
   color: #f9efcf;
   text-transform: uppercase;
+  border-top: 3px solid #f9efcf;
 }
 
 .slider__box:not(:last-child) {
@@ -271,19 +272,16 @@ a {
   transition: all 0.3s ease;
 }
 
-.slider__box::after {
+.slider__box--active::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -3px;
   left: 0;
+  z-index: 10;
   display: block;
-  width: 100%;
+  width: 30%;
   height: 3px;
-  background-color: #f9efcf;
-}
-
-.slider__box:hover::after {
-  background-color: #f38281;
+  background: #f38281;
 }
 
 .slider__text {
@@ -372,6 +370,7 @@ a {
   position: relative;
   display: flex;
   margin: 0 0.3rem;
+  transition: all 0.7s ease-in-out;   
 }
 
 .hoved__img {
@@ -403,8 +402,16 @@ a {
 }
 
 .image:hover .hoved__img,
-.image--active .hoved__img{
+.image--active .hoved__img {
   opacity: 1;
+}
+
+.image:hover .item__img img {
+  opacity: 0;
+}
+
+.image:hover .item__img {
+  background: #95e1d3;
 }
 
 /*==========section 3 futures==========*/
@@ -511,8 +518,10 @@ a {
 }
 .design__phone {    
   position: absolute;
-  bottom: -10rem;
-  right: 12rem;
+  bottom: -20%;
+  right: -70%;
+  z-index: 10;
+  width: 100%;
 }
 
 /*==========section 7 review==========*/
@@ -522,10 +531,27 @@ a {
 }
 
 .review__content {  
-  padding: 2.5rem;
+  padding: 2.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.review__btn{
+  cursor: pointer;
+}
+
+.review__btn:hover{
+  filter: invert(56%) sepia(0%) saturate(5189%) hue-rotate(79deg) brightness(106%) contrast(100%);
+}
+
+.review__btn:first-child {
+  margin-right: 2rem;  
+}
+
+.review__btn:last-child {  
+  margin-left: 2rem;
+  transform: rotate(180deg);  
 }
 
 .review__img {
@@ -535,20 +561,10 @@ a {
 }
 
 .review__img img {
-  width: 100%;
+  object-fit: cover;
 }
 
-.review__content::before {
-  padding-right: 3rem;
-  content: url("../img/svg/arrow_down.svg");
-  
-}
 
-.review__content::after {
-  padding-left: 3rem;
-  content: url("../img/svg/arrow_down.svg");
-  transform: rotate(180deg);
-}
 
 .review__text {
   max-width: 100%;

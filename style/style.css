@@ -518,11 +518,98 @@ a {
 }
 .design__phone {    
   position: absolute;
-  bottom: -20%;
+  bottom: -30%;
   right: -70%;
   z-index: 10;
   width: 100%;
 }
+
+/*==========section 5 design==========*/
+.accord__wrap {
+  display: flex;
+}
+
+.accord__img {
+  flex: 1;
+}
+
+.accord__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.accord__text__box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #C6CBCD;
+}
+
+.accord__text__box:not(:first-child){
+  margin-top: 2rem;
+}
+
+.text__box__heading {
+  max-height: 5rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  cursor: pointer;  
+}
+
+.text__box__heading img { 
+  padding: 1rem;
+}
+
+.text__box__heading h3{
+  padding: 1rem;
+  font-family: "Raleway-700";  
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;  
+  text-transform: uppercase;
+  color: #2D3033;
+}
+
+.text__box__heading::after {
+  content: url("../img/svg/arrow.svg");
+  display: block;
+  position: absolute;
+  top: 25%;
+  right: 2rem;
+  transform: rotate(90deg);  
+}  
+
+.accord__text__box--active .text__box__heading::after {
+  transform: translateY(15%) rotate(-90deg);
+}
+
+.text__box__paragraph {
+  max-height: 10rem;
+  display: none;
+  flex: 1;
+  overflow-y: scroll; 
+  border-top: 1px solid #C6CBCD;
+}
+
+.text__box__paragraph p{
+  padding: 1rem;
+  font-family: "Raleway-400";
+  font-size: 1.125rem;
+  line-height: 1.5;  
+  color: #2D3033;
+}
+
+
+.accord__text__box--active .text__box__paragraph {
+  display: initial;
+}
+
+
+
 
 /*==========section 7 review==========*/
 

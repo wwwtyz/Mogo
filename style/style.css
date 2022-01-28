@@ -124,8 +124,7 @@ a {
   margin-right: 0.5rem;
 }
 
-.nav__link:hover,
-.nav__link--active {
+.nav__link:hover { 
   color: #e4be8d;  
 }
 
@@ -143,8 +142,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.nav__link:hover::after,
-.nav__link--active::after {
+.nav__link:hover::after{
   opacity: 1;
 }
 
@@ -215,17 +213,15 @@ a {
 }
 
 .mogo__btn {
-  margin: 40px auto;
+  margin: 2.5rem auto;
   display: inline-block;
   vertical-align: top;
-  padding: 20px 100px;
+  padding: 1.2rem 6rem;
   border: 3px solid #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 1.5rem;  
   color: #fff;
   font-family: "Raleway-700", serif;
-  font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.1s linear, color 0.1s linear;
@@ -266,13 +262,12 @@ a {
   margin-right: 2rem;
 }
 
-.slider__box:hover,
-.slider__box:active {
+.slider__box:hover {
   color: #fff;
   transition: all 0.3s ease;
 }
 
-.slider__box--active::after {
+.slider__box:hover:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -401,8 +396,7 @@ a {
   padding-bottom: 1rem;
 }
 
-.image:hover .hoved__img,
-.image--active .hoved__img {
+.image:hover .hoved__img {
   opacity: 1;
 }
 
@@ -519,9 +513,8 @@ a {
 .design__phone {    
   position: absolute;
   bottom: -30%;
-  right: -70%;
-  z-index: 10;
-  width: 100%;
+  right: 15%;
+  z-index: 10;  
 }
 
 /*==========section 5 design==========*/
@@ -584,6 +577,16 @@ a {
   transform: rotate(90deg);  
 }  
 
+.text__box__heading:hover::after {
+  filter: 
+  invert(56%) 
+  sepia(0%) 
+  saturate(5189%) 
+  hue-rotate(79deg) 
+  brightness(106%) 
+  contrast(100%);
+} 
+
 .accord__text__box--active .text__box__heading::after {
   transform: translateY(15%) rotate(-90deg);
 }
@@ -609,9 +612,6 @@ a {
   display: initial;
 }
 
-
-
-
 /*==========section 7 review==========*/
 
 .section__gray {
@@ -632,7 +632,13 @@ a {
 }
 
 .review__btn:hover{
-  filter: invert(56%) sepia(0%) saturate(5189%) hue-rotate(79deg) brightness(106%) contrast(100%);
+  filter: 
+  invert(56%) 
+  sepia(0%) 
+  saturate(5189%)
+   hue-rotate(79deg) 
+   brightness(106%) 
+   contrast(100%);
 }
 
 .review__btn:first-child {
@@ -653,8 +659,6 @@ a {
 .review__img img {
   object-fit: cover;
 }
-
-
 
 .review__text {
   max-width: 100%;
@@ -693,7 +697,6 @@ a {
   height: 3px;
   background: #F38281;
 }
-
 
 /*==========section 9==========*/
 .team__card {
@@ -796,7 +799,7 @@ align-items: center;
 }
 
 .client__box {
-  margin: 3rem auto;
+  padding: 1rem 0;  
   flex-basis: 40%;
   display: flex;
   align-content: space-between;

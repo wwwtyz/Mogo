@@ -314,6 +314,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   color: #2d3033;
 }
 
@@ -342,7 +343,7 @@ a {
 .section__title:after {
   content: "";
   display: block;
-  width: 15%;
+  width: 50%;
   height: 3px;
   margin: 30px auto;
   background-color: #f38181;
@@ -929,4 +930,22 @@ a {
   align-items: center;
   color: #2d3033;
 }
+
+/*==========section 13==========*/
+.map {
+  padding: 0;
+  background-image: linear-gradient(#ffffffcc, #ffffffcc),
+    url(../img/jpg/map/map-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map .section__heading {
+  color: #f38281;
+}
+
+.map img {
+  width: 42px;
+  height: 42px;
 }

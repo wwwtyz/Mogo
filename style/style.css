@@ -170,6 +170,12 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .nav__link {
+    font-size: 0.813rem;
+  }
+}
+
 /*==========section1==========*/
 .mogo {
   background: linear-gradient(to top, #edd789e6, #e98283e6),
@@ -178,7 +184,7 @@ a {
 }
 
 .mogo__text {
-  max-width: 50rem;
+  max-width: 47rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -240,6 +246,20 @@ a {
   border-color: #e4be8d;
 }
 
+@media (max-width: 1024px) {
+  .mogo__suptitle {
+    font-size: 3rem;
+  }
+
+  .mogo__title {
+    font-size: 6rem;
+  }
+
+  .mogo__btn {
+    font-size: 1.125rem;
+  }
+}
+
 .slider {
   margin-top: 7rem;
 }
@@ -295,6 +315,16 @@ a {
 .slider__text:hover,
 .slider__num:hover {
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .slider__text {
+    font-size: 0.875rem;
+  }
+
+  .slider__num {
+    font-size: 1.5rem;
+  }
 }
 
 /*==========all sections==========*/
@@ -355,6 +385,20 @@ a {
   font-size: 1.125rem;
   line-height: 1.15;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .section__suptitle {
+    font-size: 1.5rem;
+  }
+
+  .section__title {
+    font-size: 1.5rem;
+  }
+
+  .section__paragraph {
+    font-size: 0.875rem;
+  }
 }
 
 /*==========section 2==========*/
@@ -419,6 +463,17 @@ a {
   opacity: 0;
 }
 
+@media (max-width: 1024px) {
+  .hoved__img {
+    top: -0.5rem;
+    left: -0.5rem;
+  }
+
+  .hoved__img > p {
+    font-size: 1.125rem;
+  }
+}
+
 /*==========section 3 futures==========*/
 .section__futures {
   background-color: #95e1d3;
@@ -459,6 +514,16 @@ a {
   line-height: 1.15;
 }
 
+@media (max-width: 1024px) {
+  .futures__num {
+    font-size: 3rem;
+  }
+
+  .futures__text {
+    font-size: 1.5rem;
+  }
+}
+
 /*==========section 4==========*/
 .service__box__wrap {
   display: flex;
@@ -492,6 +557,16 @@ a {
   font-size: 1.125rem;
   line-height: 1.15;
   text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .box__heading {
+    font-size: 1.125rem;
+  }
+
+  .box__text {
+    font-size: 0.875rem;
+  }
 }
 
 /*==========section 5 design==========*/
@@ -634,6 +709,16 @@ a {
   display: initial;
 }
 
+@media (max-width: 1024px) {
+  .text__box__heading h3 {
+    font-size: 1.125rem;
+  }
+
+  .text__box__paragraph p {
+    font-size: 0.875rem;
+  }
+}
+
 /*==========section 7 review==========*/
 
 .section__gray {
@@ -710,6 +795,16 @@ a {
   background: #f38281;
 }
 
+@media (max-width: 1024px) {
+  .review__text p {
+    font-size: 1.125rem;
+  }
+
+  .review__text h3 {
+    font-size: 1.5rem;
+  }
+}
+
 /*==========section 8==========*/
 .team__card {
   display: flex;
@@ -770,6 +865,16 @@ a {
   background: #f38281;
 }
 
+@media (max-width: 1024px) {
+  .team__name {
+    font-size: 1.125rem;
+  }
+
+  .team__position {
+    font-size: 0.875rem;
+  }
+}
+
 /*==========section 9==========*/
 .partners__content {
   display: flex;
@@ -808,6 +913,12 @@ a {
   font-family: "Raleway-400";
   font-size: 1.125rem;
   line-height: 1.3;
+}
+
+@media (max-width: 1024px) {
+  .vertical__images .hoved__img span {
+    font-size: 0.875rem;
+  }
 }
 
 /*==========section 11==========*/
@@ -886,6 +997,20 @@ a {
   color: #2d3033;
 }
 
+@media (max-width: 1024px) {
+  .clients__name {
+    font-size: 1.125rem;
+  }
+
+  .clients__position {
+    font-size: 0.875rem;
+  }
+
+  .clients__text {
+    font-size: 0.875rem;
+  }
+}
+
 /*==========section 13==========*/
 
 .images__wrap__box {
@@ -948,6 +1073,24 @@ a {
   color: #2d3033;
 }
 
+@media (max-width: 1024px) {
+  .sup__box {
+    font-size: 1.5rem;
+  }
+
+  .sup__box span {
+    font-size: 0.875rem;
+  }
+
+  .blog__img__text h3 {
+    font-size: 1.125rem;
+  }
+
+  .blog__img__text p {
+    font-size: 0.875rem;
+  }
+}
+
 /*==========section 13==========*/
 .map {
   padding: 0;
@@ -982,13 +1125,13 @@ a {
   display: flex;
   gap: 2rem;
   font-family: "Raleway-700", serif;
+  font-size: 1.125rem;
   color: #2d3033;
 }
 
 .footer__box {
   margin: 2.5rem 0;
   flex: 4;
-  font-size: 1.125rem;
   line-height: 1.125;
 }
 
@@ -1016,7 +1159,6 @@ a {
 }
 
 .box__text--black span {
-  font-size: 1.125rem;
   font-family: "Raleway-400", serif;
   font-style: italic;
 }
@@ -1062,6 +1204,14 @@ a {
   cursor: pointer;
   background: #95e1d3;
   text-transform: uppercase;
+}
+
+.form-btn:hover {
+  background: #87d2c4;
+}
+
+.form-btn:active {
+  background: #5c958a;
 }
 
 .blog__item {
@@ -1124,4 +1274,22 @@ a {
   font-size: 0.813rem;
   text-align: center;
   border-top: 1px solid #c6cbcd;
+}
+
+@media (max-width: 1024px) {
+  .footer__content {
+    font-size: 0.875rem;
+  }
+
+  .box__text--black span {
+    font-size: 1.125rem;
+  }
+
+  .footer__social {
+    font-size: 0.75rem;
+  }
+
+  .blog__img__text p {
+    font-size: 0.875rem;
+  }
 }

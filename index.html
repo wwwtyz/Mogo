@@ -19,23 +19,20 @@
             </a>
           </div>
 
-          <div class="burger-menu">
+          <div class="header__menu">
             <label for="burger">
-              <input class="burger__checkbox" type="checkbox" id="burger"/> 
+              <input class="burger__checkbox" type="checkbox" id="burger" />
               <span></span>
               <span></span>
               <span></span>
             </label>
-          </div>
-          
-          <div class="header__menu">
             <nav class="nav">
               <ul>
-                <li class="nav__link"><a href="#about"></a>about</li>
-                <li class="nav__link"><a href="#service"></a>service</li>
-                <li class="nav__link"><a href="#work"></a>work</li>
-                <li class="nav__link"><a href="#blog"></a>blog</li>
-                <li class="nav__link"><a href="#contact"></a>contact</li>
+                <li class="nav__link"><a href="#about">about</a></li>
+                <li class="nav__link"><a href="#service">service</a></li>
+                <li class="nav__link"><a href="#work">work</a></li>
+                <li class="nav__link"><a href="#blog">blog</a></li>
+                <li class="nav__link"><a href="#contact">contact</a></li>
               </ul>
             </nav>
 
@@ -59,7 +56,7 @@
                 </button>
               </div>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </header>
@@ -120,7 +117,7 @@
           <div class="images__wrap">
             <div class="image">
               <div class="item__img">
-                <img src="./img/jpg/about/about3.jpg" alt="architecture" />
+                <img src="./img/jpg/about/about1.jpg" alt="architecture" />
               </div>
               <div class="hoved__img">
                 <img src="./img/svg/super-team.svg" alt="super-team" />
@@ -308,9 +305,17 @@
           </div>
 
           <div class="accord__wrap">
-            <div class="accord__img">
-              <img src="./img/jpg/accord/accord.jpg" alt="man" />
-            </div>
+            <picture class="accord__img">
+              <source
+                srcset="/img/jpg/accord/accord-m.jpg"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="/img/jpg/accord/accord-t.jpg"
+                media="(max-width: 1024px)"
+              />
+              <img src="/img/jpg/accord/accord.jpg" alt="man" />
+            </picture>
 
             <div class="accord__text">
               <div class="accord__text__box accord__text__box--active">

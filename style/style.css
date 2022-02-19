@@ -1117,25 +1117,56 @@ a.partner__logo {
 /*==========section 10==========*/
 .work__images {
   max-width: 1510px;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "img1 img3 img5 img6"
+    "img2 img4 img5 img7";
 }
 
-.vertical__images .image {
-  margin: 0;
+.work__images .image:nth-child(1) {
+  grid-area: img1;
 }
 
-.vertical__images .hoved__img {
+.work__images .image:nth-child(2) {
+  grid-area: img2;
+}
+
+.work__images .image:nth-child(3) {
+  grid-area: img3;
+}
+
+.work__images .image:nth-child(4) {
+  grid-area: img4;
+}
+
+.work__images .image:nth-child(5) {
+  grid-area: img5;
+}
+
+.work__images .image:nth-child(6) {
+  grid-area: img6;
+}
+
+.work__images .image:nth-child(7) {
+  grid-area: img7;
+}
+
+.work__images .image img {
+  width: 100%;
+}
+
+.work__images .hoved__img {
   top: 0;
   left: 0;
 }
 
-.vertical__images .hoved__img img {
+.work__images .hoved__img img {
   margin-bottom: 4rem;
 }
 
-.vertical__images .hoved__img span {
+.work__images .hoved__img span {
   padding-top: 1rem;
   color: #fff;
   font-family: "Raleway-400";
@@ -1144,8 +1175,27 @@ a.partner__logo {
 }
 
 @media (max-width: 1024px) {
-  .vertical__images .hoved__img span {
+  .work__images .hoved__img span {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .work__images {
+    grid-template-areas:
+      "img1 img5"
+      "img2 img5"
+      "img7 img5"
+      "img6 img3"
+      "img4 img4";
+  }
+
+  .work__images .image {
+    width: 100%;
+    margin: 0;
+  }
+  .work__images .hoved__img {
+    display: none;
   }
 }
 

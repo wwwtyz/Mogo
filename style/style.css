@@ -64,6 +64,29 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Raleway-400", serif;
+  font-size: 1.125rem;
+  line-height: 1.15;
+}
+
+h3 {
+  font-family: "Raleway-700", serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: 0.875rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,7 +102,6 @@ a {
 .header__content {
   display: flex;
   padding: 1rem;
-
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -267,7 +289,6 @@ a {
   width: 25%;
   height: 3px;
   margin: 30px auto;
-
   background-color: #fff;
 }
 
@@ -277,12 +298,12 @@ a {
   vertical-align: top;
   padding: 1.2rem 6rem;
   border: 3px solid #fff;
-  text-align: center;
   font-size: 1.5rem;
   color: #fff;
   font-family: "Raleway-700", serif;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   transition: 0.1s linear, color 0.1s linear;
 }
 
@@ -369,9 +390,8 @@ a {
 }
 
 .slider__text {
-  padding: 15px 0;
   font-family: "Raleway-500", serif;
-  font-size: 1.125rem;
+  padding: 15px 0;
 }
 
 .slider__num {
@@ -385,10 +405,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .slider__text {
-    font-size: 0.875rem;
-  }
-
   .slider__num {
     font-size: 1.5rem;
   }
@@ -415,7 +431,7 @@ a {
   padding: 1rem 0;
 }
 .section__content {
-  margin: 1rem auto 5rem;
+  margin: 1rem auto 3rem;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -463,9 +479,6 @@ a {
 
 .section__paragraph {
   padding: 1rem 0 2rem;
-  font-family: "Raleway-400", serif;
-  font-size: 1.125rem;
-  line-height: 1.15;
   text-align: center;
 }
 
@@ -500,7 +513,11 @@ a {
 }
 
 .item__img {
+  width: 100%;
   display: flex;
+}
+
+.about .item__img {
   background: #95e1d3;
 }
 
@@ -596,6 +613,9 @@ a {
 }
 
 .futures__box {
+  font-family: "Raleway-700", serif;
+  line-height: 1.15;
+  font-size: 1.5rem;
   flex: 1;
   padding: 4% 0;
   border-left: 1px solid #fff;
@@ -607,17 +627,9 @@ a {
 }
 
 .futures__num {
-  font-family: "Raleway-700", serif;
   font-size: 4rem;
   font-weight: bold;
-  line-height: 1.15;
   padding-bottom: 1rem;
-}
-
-.futures__text {
-  font-family: "Raleway-700", serif;
-  font-size: 1.5rem;
-  line-height: 1.15;
 }
 
 @media (max-width: 1024px) {
@@ -677,29 +689,13 @@ a {
 
 .box__heading {
   padding: 1rem 0 1rem 1rem;
-  font-family: "Raleway-700", serif;
-  font-size: 1.5rem;
-  line-height: 1.15;
   text-transform: uppercase;
-  text-align-last: left;
+  color: #2d3033;
 }
 
 .box__text {
-  padding: 10px 0 1rem 1rem;
-  font-family: "Raleway-400", serif;
-  font-size: 1.125rem;
-  line-height: 1.15;
-  text-align: left;
-}
-
-@media (max-width: 1024px) {
-  .box__heading {
-    font-size: 1.125rem;
-  }
-
-  .box__text {
-    font-size: 0.875rem;
-  }
+  padding: 1rem 0 1rem 1rem;
+  color: #2d3033;
 }
 
 @media (max-width: 768px) {
@@ -800,11 +796,7 @@ a {
 
 .text__box__heading h3 {
   padding: 1rem;
-  font-family: "Raleway-700";
   font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-transform: uppercase;
   color: #2d3033;
 }
 
@@ -855,6 +847,7 @@ a {
     font-size: 0.875rem;
   }
 }
+
 @media (max-width: 768px) {
   .text__box__heading h3 {
     font-size: 0.875rem;
@@ -931,16 +924,16 @@ a {
   color: #a9afb1;
 }
 
-.review__text h3 {
+.review__text h4 {
   position: relative;
-  padding: 1rem 10rem;
+  padding: 1rem 0 1rem 10rem;
   text-align: left;
   font-family: "KaushanScript-400", cursive;
   font-size: 1.875rem;
   line-height: 1.45;
 }
 
-.review__text h3::before {
+.review__text h4::before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -972,7 +965,7 @@ a {
     font-size: 1.125rem;
   }
 
-  .review__text h3 {
+  .review__text h4 {
     font-size: 1.5rem;
   }
 }
@@ -987,7 +980,7 @@ a {
     display: none;
   }
 
-  .review__text h3 {
+  .review__text h4 {
     font-size: 1.5rem;
   }
 
@@ -1002,20 +995,11 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .team__name {
   padding: 1rem 0;
-  text-transform: uppercase;
-  font-family: "Raleway-700", serif;
-  font-size: 1.5rem;
-  line-height: 1.15;
-}
-.team__position {
-  text-transform: uppercase;
-  font-family: "Raleway-400", serif;
-  font-size: 1.5rem;
-  line-height: 1.15;
 }
 
 .social {
@@ -1190,6 +1174,13 @@ a.partner__logo {
       "img4 img4";
   }
 
+  .work__images .image:nth-child(4) {
+    flex-direction: column;
+  }
+  .work__images picture {
+    width: 100%;
+  }
+
   .work__images .image {
     width: 100%;
     margin: 0;
@@ -1237,20 +1228,9 @@ a.partner__logo {
   color: #2d3033;
 }
 
-.clients__name {
-  font-family: "Raleway-700";
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.15;
-  text-transform: uppercase;
-}
-
 .clients__position {
   margin: 1rem 0 4rem;
   position: relative;
-  font-family: "Raleway-400";
-  font-size: 1.125rem;
-  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -1325,28 +1305,25 @@ a.partner__logo {
   left: -1rem;
   bottom: 10%;
   background-color: #95e1d3;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.67;
+}
 
+.sup__box p {
   font-family: "Raleway-500";
   font-weight: bold;
   font-size: 2.25rem;
-  line-height: 0.83;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .sup__box span {
-  font-weight: normal;
   font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .blog__img__text h3 {
   margin-top: 1rem;
   padding: 0.5rem 0;
-  font-family: "Raleway-700", serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.75;
-  text-transform: uppercase;
   color: #2d3033;
 }
 
@@ -1465,7 +1442,6 @@ a.partner__logo {
 }
 
 .footer__box__heading {
-  text-transform: uppercase;
   padding: 1.5rem 0;
 }
 
@@ -1474,7 +1450,6 @@ a.partner__logo {
 }
 
 .logo-box__text--gray {
-  font-family: "Raleway-400", serif;
   color: #c6cbcd;
   padding-bottom: 1rem;
 }
@@ -1627,10 +1602,6 @@ a.partner__logo {
     font-size: 0.75rem;
   }
 
-  .blog__img__text p {
-    font-size: 0.875rem;
-  }
-}
 
 @media (max-width: 768px) {
   .footer__content {

@@ -1311,9 +1311,12 @@ a.partner__logo {
 }
 
 .sup__box p {
-  font-family: "Raleway-500";
+  font-family: "Raleway-700";
   font-weight: bold;
   font-size: 2.25rem;
+}
+.sup__box p::first-letter {
+  font-family: "Raleway-500";
 }
 
 .sup__box span {
@@ -1382,6 +1385,11 @@ a.partner__logo {
 
   .sup__box {
     left: 0;
+    padding: 0.5rem 2rem;
+  }
+
+  .blog__img__text h3 {
+    margin-top: 0.5rem;
   }
 
   .blog__img__stat {

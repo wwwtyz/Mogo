@@ -1455,16 +1455,23 @@ a.partner__logo {
 }
 
 .logo-box__text--black {
-  padding-bottom: 1rem;
+  font-family: "Raleway-700", serif;
   font-size: 1.5rem;
-  line-height: 1.67;
-  text-transform: uppercase;
+  line-height: 1.875;
   border-bottom: 1px solid #c6cbcd;
 }
+.logo-box__text--black::first-letter {
+  font-size: 1.125rem;
+}
 
-.box__text--black span {
+.logo-box__text--black span::first-letter {
+  font-family: "Raleway-700", serif;
+}
+
+.logo-box__text--black span {
   font-family: "Raleway-400", serif;
-  font-style: italic;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .footer__social {
@@ -1541,6 +1548,10 @@ a.partner__logo {
   flex-direction: column;
   flex: 2;
   padding-left: 2rem;
+}
+
+.blog__box__text p {
+  font-family: "Raleway-700", serif;
   text-transform: uppercase;
 }
 
@@ -1550,7 +1561,6 @@ a.partner__logo {
   font-family: "Raleway-400", serif;
   font-size: 0.75rem;
   line-height: 1.1;
-  text-transform: lowercase;
 }
 
 .footer__insta {
@@ -1560,7 +1570,6 @@ a.partner__logo {
 .instagram__img__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .instagram__img img {
@@ -1580,10 +1589,9 @@ a.partner__logo {
   color: #2d3033;
 }
 
-.footer__coptright {
+.footer__coptright p {
   padding: 1rem;
   font-family: "Raleway-700", serif;
-  font-style: bold;
   font-size: 0.813rem;
   text-align: center;
   border-top: 1px solid #c6cbcd;
@@ -1595,13 +1603,13 @@ a.partner__logo {
   }
 
   .box__text--black span {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
 
   .footer__social {
     font-size: 0.75rem;
   }
-
+}
 
 @media (max-width: 768px) {
   .footer__content {
@@ -1628,5 +1636,8 @@ a.partner__logo {
 
   .instagram__box a {
     text-align: center;
+  }
+  .instagram__img__wrap {
+    justify-content: center;
   }
 }
